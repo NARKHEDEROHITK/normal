@@ -1,0 +1,444 @@
+@import "../assets/sass/abstract/mixins";
+@import "../assets/sass/abstract/variables";
+
+.header {
+    border: 1px solid #cbd2dc;
+    border-bottom: none;
+
+    .mobile-searchbar {
+        background-color: $silver-10;
+        padding: 12px 8px;
+        margin: $spacing-06 0;
+
+        input {
+            background-color: $silver-10;
+            outline: none;
+        }
+    }
+}
+
+// Header css
+.header_container {
+    padding: $spacing-06 0px;
+
+    // border: 1px solid #CBD2DC;
+    @include for-md {
+        justify-content: space-between;
+    }
+
+    @include for-sm {
+        justify-content: space-between;
+        padding: $spacing-06;
+    }
+
+    @include for-xs {
+        justify-content: space-between;
+        padding: $spacing-06;
+    }
+
+    .logo_rics {
+        width: 115px;
+        height: 40px;
+        margin-right: $spacing-05;
+    }
+
+    .search_container {
+        margin-right: $spacing-05;
+        width: 100%;
+        border: 1px solid $silver-70;
+        border-radius: 4px;
+        display: flex;
+
+        .font-for-category {
+            @include paragraph-font($semi-bold, $text-charcoal, $font-size-13, $line-height-20);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .down-arrow {
+            color: $text-charcoal !important;
+        }
+        .transform-by-180 {
+            transform: rotate(180deg);
+        }
+        .category-option {
+            padding: 8px 12px;
+            @include paragraph-font($regular, $text-charcoal, $font-size-14, $line-height-24);
+        }
+    }
+
+    .search_form {
+        width: 100%;
+        padding: 14px 12px;
+    }
+
+    .select_dropdown {
+        border: none;
+        border-right: 1px solid $silver-70;
+        background-color: $silver-10 !important;
+        padding: 14px 12px;
+        border-radius: 0px;
+        width: fit-content;
+        @include paragraph-font($semi-bold, $text-charcoal, $font-size-13, $line-height-20);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        background-image: url("../header/arrow_down.png");
+        background-repeat: no-repeat;
+        background-position-x: 97%;
+        background-position-y: 18px;
+        background-size: 20px;
+        padding-right: 2rem;
+    }
+
+    option {
+        @include paragraph-font($semi-bold, $text-charcoal, $font-size-13, $line-height-20);
+    }
+
+    .searchbox {
+        border: none;
+    }
+
+    .header_links_container {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    .pb_8 {
+        padding-bottom: $spacing-03;
+    }
+
+    .badge_pos {
+        position: absolute;
+        right: 9px;
+        top: -10px;
+    }
+
+    .cart_icon {
+        color: $grey-100;
+        margin-right: $spacing-06;
+        cursor: pointer;
+    }
+
+    .search_icon {
+        cursor: pointer;
+        color: $grey-100;
+    }
+    #dextop-typing-close{
+        z-index: 99;
+        font-size: 20px;
+        color: $text-charcoal;
+    }
+    .divider-icons-line{
+        border-left:1px solid $silver-70;
+        height: 24px;
+        margin-left: 15px;
+        margin-right: 15px;
+        
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        padding: 0px 16px;
+        background-color: $purple-10;
+        cursor: pointer;
+        border-radius: 28px;
+        @include paragraph-font($bold, $purple-100, $font-size-13, $line-height-20);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: $spacing-04;
+    }
+
+    .dropdown-toggle::after {
+        border: none;
+        margin-left: 0px;
+    }
+
+    .dropdown_header {
+        padding: $spacing-06;
+        // transform: translate(-200px, 42px) !important;
+        width: 280px;
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        background-color: transparent;
+    }
+
+    .dropdown-item {
+        padding: 8px 0px;
+        @include paragraph-font($regular, $text-charcoal, $font-size-14, $line-height-20);
+    }
+
+    .border_avatar {
+        border: 1px solid $purple-70;
+    }
+
+    .profile_name {
+        @include paragraph-font($semi-bold, $purple-100, $font-size-14, $line-height-20);
+    }
+
+    .member_number {
+        @include paragraph-font($regular, $purple-100, $font-size-14, $line-height-20);
+    }
+
+    :focus-visible {
+        outline: none;
+    }
+
+    .badges {
+        border-radius: 50%;
+        background-color: $critical-70;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include paragraph-font($semi-bold, $white, 10px, $line-height-16);
+    }
+
+    .header_links {
+        @include paragraph-font($semi-bold, $grey-100, $font-size-13, $line-height-20);
+        text-decoration: none;
+        white-space: nowrap;
+        padding: $spacing-03;
+    }
+
+    .nowrap {
+        white-space: nowrap;
+    }
+
+    .mr_12 {
+        margin-right: $spacing-04;
+    }
+
+    @include for-md {
+        .search_container {
+            display: none;
+        }
+
+        .links_container {
+            display: none;
+        }
+
+        .header_button {
+            display: none !important;
+        }
+        .avatar_loggedin {
+            display: none;
+        }
+    }
+
+    @include for-sm {
+        .search_container {
+            display: none;
+        }
+
+        .links_container {
+            display: none;
+        }
+
+        .header_button {
+            display: none !important;
+        }
+        .avatar_loggedin {
+            display: none;
+        }
+    }
+
+    @include for-xs {
+        .search_container {
+            display: none;
+        }
+
+        .links_container {
+            display: none;
+        }
+
+        .header_button {
+            display: none !important;
+        }
+        .avatar_loggedin {
+            display: none;
+        }
+    }
+}
+
+// Mobile CSS
+
+#childnav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    top: 90px;
+    left: 0;
+    background-color: #4d3069;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    left: 0;
+    background-color: #4d3069;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.header_mobile {
+    background-color: #4d3069;
+    padding: $spacing-06 0px;
+
+    @include for-sm {
+        padding: $spacing-06;
+    }
+
+    @include for-xs {
+        padding: $spacing-06;
+    }
+
+    .profile_name {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        @include paragraph-font($bold, $purple-100, $font-size-13, $line-height-20);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+    }
+
+    .border_primary {
+        border: 1px solid #cbd2dc;
+    }
+
+    .username {
+        @include paragraph-font($semi-bold, $white, $font-size-14, $line-height-20);
+    }
+
+    .userid {
+        @include paragraph-font($regular, $purple-20, $font-size-13, $line-height-20);
+    }
+
+    .arrow_right {
+        color: $purple-40;
+        cursor: pointer;
+    }
+
+    .options {
+        @include paragraph-font($regular, $purple-20, $font-size-16, $line-height-24);
+    }
+
+    .options1 {
+        @include paragraph-font($regular, $purple-40, $font-size-14, $line-height-20);
+    }
+
+    .mr_9 {
+        margin-right: 9px;
+    }
+
+    .heading {
+        @include paragraph-font($bold, $purple-20, $font-size-16, $line-height-24);
+        margin-bottom: $spacing-06 !important;
+    }
+}
+
+// Search dropdown css
+
+.ui-front {
+    top: 80px !important;
+    left: 295px !important;
+    padding: 8px 12px !important;
+}
+
+// search mobile css
+
+.search-mobile {
+    z-index: 10;
+    position: relative;
+    background-color: white;
+    height: 100vh;
+    .search-mobile-container {
+        padding: $spacing-06;
+        background-color: $purple-100;
+
+        .search-label {
+            @include paragraph-font($semi-bold, $purple-20, $font-size-14, $line-height-20);
+            margin-bottom: 4px;
+        }
+        .search-mobile-button {
+            width: 100%;
+            padding: 14px 12px;
+            background-color: $white;
+        }
+        .font-for-category {
+            @include paragraph-font($semi-bold, $text-charcoal, $font-size-13, $line-height-20);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .down-arrow {
+            color: $text-charcoal !important;
+        }
+        .transform-by-180 {
+            transform: rotate(180deg);
+        }
+        .category-option {
+            padding: 8px 12px;
+            @include paragraph-font($regular, $text-charcoal, $font-size-14, $line-height-24);
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .main-category {
+            padding: 8px 12px;
+
+            .category-option {
+                padding: 8px 0px;
+                @include paragraph-font($regular, $text-charcoal, $font-size-14, $line-height-24);
+            }
+        }
+        .search_form {
+            width: 100%;
+            background-color: $white !important;
+            position: relative;
+        }
+        .search-input-mobile {
+            padding: 14px 12px;
+            @include paragraph-font($regular, $text-charcoal, $font-size-14, $line-height-20);
+        }
+        .search_icon {
+            cursor: pointer;
+            color: $grey-100;
+            margin-right: 5px;
+            position: absolute;
+            top: 12px;
+            right: 8px;
+            z-index: 10;
+        }
+    }
+
+
+    .xdsoft_autocomplete_dropdown{
+        @include for-md{
+            width: 300px;
+        }
+        @include for-xs{
+            width: 300px;
+        }
+        @include for-sm{
+            width: 300px;
+        }
+    }
+}

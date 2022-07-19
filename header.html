@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../lozenge/lozenge.css">
+    <link rel="stylesheet" href="../navigation/navigation.css">
+    <link rel="stylesheet" href="../button/button.css">
+    <link rel="stylesheet" href="../card_generic/card_generic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="autocomplete.css">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="wrapper">
+            <div class="header_container d-flex align-items-center d-block" id="showheader">
+                <div class="d-lg-none">
+                    <span class="material-icons-outlined" id="hamburgur">
+                        menu
+                    </span>
+                    <span class="material-icons-outlined d-none" id="cross">
+                        close
+                    </span>
+                </div>
+                <div>
+                    <img src="../assets/images/Logo (1).png" class="logo_rics" alt="">
+                </div>
+                <div class="search_container">
+                    <div class="btn-group">
+                        <button type="button"
+                            class="border-0 font-for-category d-flex justify-content-center align-items-center dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="select-category">All RICS.org</span> <span
+                                class="material-icons-outlined down-arrow">
+                                keyboard_arrow_down
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu py-0 main-category">
+                            <li><a class="dropdown-item category-option" href="#">Action</a></li>
+                            <li><a class="dropdown-item category-option" href="#">Another action</a></li>
+                            <li><a class="dropdown-item category-option" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item category-option" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <form class="d-flex align-items-center search_form justify-content-between">
+                        <input type="text" placeholder="Search.." name="search" class="searchbox w-100">
+                        <span class="material-icons-outlined d-none" id="dextop-typing-close">
+                            close
+                        </span>
+                        <div class="divider-icons-line"> </div>
+                        <span class="material-icons-outlined search_icon">
+                            search
+                        </span>
+                    </form>
+                </div>
+                <div class="links_container">
+                    <ul class="header_links_container p-0 mb-0">
+                        <li class="p_8">
+                            <a href="#" class="header_links">Find Member</a>
+                        </li>
+                        <li class="p_8">
+                            <a href="#" class="header_links">Find Surveyor</a>
+                        </li>
+                        <li class="p_8  d-xl-block  d-none">
+                            <a href="#" class="header_links">About RICS</a>
+                        </li>
+                        <li class="p_8  d-xl-block  d-none ">
+                            <a href="#" class="header_links ">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex">
+
+                    <div>
+                        <span class="material-icons-outlined d-lg-none" id="search-btn">
+                            search
+                        </span>
+                        <span class="material-icons-outlined d-none" id="cross-search">
+                            close
+                        </span>
+                    </div>
+
+                </div>
+
+
+
+                <div class="d-flex align-items-center header_button">
+                    <div class="button_container mr_12">
+                        <button type="button" class="button_primary small_btn nowrap">Login </button>
+                    </div>
+                    <div class="button_container ">
+                        <button type="button" class="button_secondary small_btn nowrap">Register </button>
+                    </div>
+
+                </div>
+
+                <div class="avatar_loggedin dropdown">
+                    <div class="avatar border_avatar dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">HB</div>
+                    <ul class="dropdown-menu dropdown_header" aria-labelledby="dropdownMenuButton1">
+                        <li class="pb_8 ">
+                            <p class="mb-0 profile_name">Henrik Bustrup</p>
+                            <p class="mb-0 member_number">Member No. 1247651</p>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- dextop -->
+    <div class=" d-lg-block d-none ">
+        <ul class="dextop-nav list-style-none d-flex justify-content-center">
+            <li class="nav_options">
+                <a class="navigation_links" href="#">Join RICS</a>
+
+                <div class="navigation_section">
+
+                    <div class="nav_1">
+                        <h2 class="nav1_heading">Profession & Standards</h2>
+                        <p class="mb-3 nav1_content">Leading international standards employed across the built and
+                            natural
+                            environment</p>
+                        <p class="mb-0 d-flex goto-section">Go to section
+                            <span class="material-icons-outlined">
+                                chevron_right
+                            </span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="nav_2">
+                        <ul class="p-0">
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+
+                                <div class="nav3_hidden">
+                                </div>
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center ">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav_4">
+                        <div class="card h-100">
+                            <div class="card_container">
+                                <div class="image_container">
+                                    <img src="https://media.istockphoto.com/photos/freedom-chains-that-transform-into-birds-charge-concept-picture-id1322104312?b=1&k=20&m=1322104312&s=170667a&w=0&h=VQyPkFkMKmo0e4ixjhiOLjiRs_ZiyKR_4SAsagQQdkk="
+                                        class="image" alt="card" title="card">
+                                </div>
+
+                                <div class="cardgeneric_body">
+                                    <div class="mb_8">
+                                        <span class="purple-lozenge-xsm">
+                                            Lozenge
+                                        </span>
+                                    </div>
+
+                                    <h1 class="cardgeneric_heading m-0">Conduct Rules, Ethics & Profesional Practice
+                                        Competency
+                                        Masterclass and onto three lines</h1>
+                                    <p class="sub_label mb-0">Sub-label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </li>
+
+
+
+            <li class="nav_options">
+                <a class="navigation_links" href="#">Join RICS</a>
+                <div class="navigation_section">
+
+                    <div class="nav_1">
+                        <h2 class="nav1_heading">Profession & Standards</h2>
+                        <p class="mb-3 nav1_content">Leading international standards employed across the built and
+                            natural
+                            environment</p>
+                        <p class="mb-0 d-flex goto-section">Go to section
+                            <span class="material-icons-outlined">
+                                chevron_right
+                            </span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="nav_2">
+                        <ul class="p-0">
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center ">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav_4">
+                        <div class="card h-100">
+                            <div class="card_container">
+                                <div class="image_container">
+                                    <img src="https://media.istockphoto.com/photos/freedom-chains-that-transform-into-birds-charge-concept-picture-id1322104312?b=1&k=20&m=1322104312&s=170667a&w=0&h=VQyPkFkMKmo0e4ixjhiOLjiRs_ZiyKR_4SAsagQQdkk="
+                                        class="image" alt="card" title="card">
+                                </div>
+
+                                <div class="cardgeneric_body">
+                                    <div class="mb_8">
+                                        <span class="purple-lozenge-xsm">
+                                            Lozenge
+                                        </span>
+                                    </div>
+
+                                    <h1 class="cardgeneric_heading m-0">Conduct Rules, Ethics & Profesional Practice
+                                        Competency
+                                        Masterclass and onto three lines</h1>
+                                    <p class="sub_label mb-0">Sub-label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+            </li>
+
+            <li class="nav_options">
+                <a href="#">Regulation</a>
+                <div class="navigation_section">
+
+                    <div class="nav_1">
+                        <h2 class="nav1_heading">Profession & Standards</h2>
+                        <p class="mb-3 nav1_content">Leading international standards employed across the built and
+                            natural
+                            environment</p>
+                        <p class="mb-0 d-flex goto-section">Go to section
+                            <span class="material-icons-outlined">
+                                chevron_right
+                            </span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="nav_2">
+                        <ul class="p-0">
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center ">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav_4">
+                        <div class="card h-100">
+                            <div class="card_container">
+                                <div class="image_container">
+                                    <img src="https://media.istockphoto.com/photos/freedom-chains-that-transform-into-birds-charge-concept-picture-id1322104312?b=1&k=20&m=1322104312&s=170667a&w=0&h=VQyPkFkMKmo0e4ixjhiOLjiRs_ZiyKR_4SAsagQQdkk="
+                                        class="image" alt="card" title="card">
+                                </div>
+
+                                <div class="cardgeneric_body">
+                                    <div class="mb_8">
+                                        <span class="purple-lozenge-xsm">
+                                            Lozenge
+                                        </span>
+                                    </div>
+
+                                    <h1 class="cardgeneric_heading m-0">Conduct Rules, Ethics & Profesional Practice
+                                        Competency
+                                        Masterclass and onto three lines</h1>
+                                    <p class="sub_label mb-0">Sub-label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </li>
+            <li class="nav_options">
+                <a href="#">Training & Events</a>
+                <div class="navigation_section">
+
+                    <div class="nav_1">
+                        <h2 class="nav1_heading">Profession & Standards</h2>
+                        <p class="mb-3 nav1_content">Leading international standards employed across the built and
+                            natural
+                            environment</p>
+                        <p class="mb-0 d-flex goto-section">Go to section
+                            <span class="material-icons-outlined">
+                                chevron_right
+                            </span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="nav_2">
+                        <ul class="p-0">
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center ">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav_4">
+                        <div class="card h-100">
+                            <div class="card_container">
+                                <div class="image_container">
+                                    <img src="https://media.istockphoto.com/photos/freedom-chains-that-transform-into-birds-charge-concept-picture-id1322104312?b=1&k=20&m=1322104312&s=170667a&w=0&h=VQyPkFkMKmo0e4ixjhiOLjiRs_ZiyKR_4SAsagQQdkk="
+                                        class="image" alt="card" title="card">
+                                </div>
+
+                                <div class="cardgeneric_body">
+                                    <div class="mb_8">
+                                        <span class="purple-lozenge-xsm">
+                                            Lozenge
+                                        </span>
+                                    </div>
+
+                                    <h1 class="cardgeneric_heading m-0">Conduct Rules, Ethics & Profesional Practice
+                                        Competency
+                                        Masterclass and onto three lines</h1>
+                                    <p class="sub_label mb-0">Sub-label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </li>
+            <li class="nav_options">
+                <a href="#">News & Insight</a>
+                <div class="navigation_section">
+
+                    <div class="nav_1">
+                        <h2 class="nav1_heading">Profession & Standards</h2>
+                        <p class="mb-3 nav1_content">Leading international standards employed across the built and
+                            natural
+                            environment</p>
+                        <p class="mb-0 d-flex goto-section">Go to section
+                            <span class="material-icons-outlined">
+                                chevron_right
+                            </span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="nav_2">
+                        <ul class="p-0">
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center ">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav_4">
+                        <div class="card h-100">
+                            <div class="card_container">
+                                <div class="image_container">
+                                    <img src="https://media.istockphoto.com/photos/freedom-chains-that-transform-into-birds-charge-concept-picture-id1322104312?b=1&k=20&m=1322104312&s=170667a&w=0&h=VQyPkFkMKmo0e4ixjhiOLjiRs_ZiyKR_4SAsagQQdkk="
+                                        class="image" alt="card" title="card">
+                                </div>
+
+                                <div class="cardgeneric_body">
+                                    <div class="mb_8">
+                                        <span class="purple-lozenge-xsm">
+                                            Lozenge
+                                        </span>
+                                    </div>
+
+                                    <h1 class="cardgeneric_heading m-0">Conduct Rules, Ethics & Profesional Practice
+                                        Competency
+                                        Masterclass and onto three lines</h1>
+                                    <p class="sub_label mb-0">Sub-label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </li>
+            <li class="nav_options">
+                <a href="#">Dispute Resolution Service</a>
+                <div class="navigation_section">
+
+                    <div class="nav_1">
+                        <h2 class="nav1_heading">Profession & Standards</h2>
+                        <p class="mb-3 nav1_content">Leading international standards employed across the built and
+                            natural
+                            environment</p>
+                        <p class="mb-0 d-flex goto-section">Go to section
+                            <span class="material-icons-outlined">
+                                chevron_right
+                            </span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="nav_2">
+                        <ul class="p-0">
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center ">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav_4">
+                        <div class="card h-100">
+                            <div class="card_container">
+                                <div class="image_container">
+                                    <img src="https://media.istockphoto.com/photos/freedom-chains-that-transform-into-birds-charge-concept-picture-id1322104312?b=1&k=20&m=1322104312&s=170667a&w=0&h=VQyPkFkMKmo0e4ixjhiOLjiRs_ZiyKR_4SAsagQQdkk="
+                                        class="image" alt="card" title="card">
+                                </div>
+
+                                <div class="cardgeneric_body">
+                                    <div class="mb_8">
+                                        <span class="purple-lozenge-xsm">
+                                            Lozenge
+                                        </span>
+                                    </div>
+
+                                    <h1 class="cardgeneric_heading m-0">Conduct Rules, Ethics & Profesional Practice
+                                        Competency
+                                        Masterclass and onto three lines</h1>
+                                    <p class="sub_label mb-0">Sub-label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav_options">
+                <a href="#">Networking</a>
+                <div class="navigation_section">
+
+                    <div class="nav_1">
+                        <h2 class="nav1_heading">Profession & Standards</h2>
+                        <p class="mb-3 nav1_content">Leading international standards employed across the built and
+                            natural
+                            environment</p>
+                        <p class="mb-0 d-flex goto-section">Go to section
+                            <span class="material-icons-outlined">
+                                chevron_right
+                            </span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="nav_2">
+                        <ul class="p-0">
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center ">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav_4">
+                        <div class="card h-100">
+                            <div class="card_container">
+                                <div class="image_container">
+                                    <img src="https://media.istockphoto.com/photos/freedom-chains-that-transform-into-birds-charge-concept-picture-id1322104312?b=1&k=20&m=1322104312&s=170667a&w=0&h=VQyPkFkMKmo0e4ixjhiOLjiRs_ZiyKR_4SAsagQQdkk="
+                                        class="image" alt="card" title="card">
+                                </div>
+
+                                <div class="cardgeneric_body">
+                                    <div class="mb_8">
+                                        <span class="purple-lozenge-xsm">
+                                            Lozenge
+                                        </span>
+                                    </div>
+
+                                    <h1 class="cardgeneric_heading m-0">Conduct Rules, Ethics & Profesional Practice
+                                        Competency
+                                        Masterclass and onto three lines</h1>
+                                    <p class="sub_label mb-0">Sub-label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav_options">
+                <a href="#">Careers</a>
+                <div class="navigation_section">
+
+                    <div class="nav_1">
+                        <h2 class="nav1_heading">Profession & Standards</h2>
+                        <p class="mb-3 nav1_content">Leading international standards employed across the built and
+                            natural
+                            environment</p>
+                        <p class="mb-0 d-flex goto-section">Go to section
+                            <span class="material-icons-outlined">
+                                chevron_right
+                            </span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="nav_2">
+                        <ul class="p-0">
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="nav3_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block nav3_arrow">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center ">
+                                            <div class="nav2_links">abcd</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">xyz</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="nav2_links">RICS Standards & Guidance</div>
+                                <span class="material-icons-outlined d-block nav2_arrow">
+                                    chevron_right
+                                </span>
+
+                                <div class="nav_3">
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div class="nav2_links">RICS Standards & Guidance</div>
+                                            <span class="material-icons-outlined d-block">
+                                                chevron_right
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav_4">
+                        <div class="card h-100">
+                            <div class="card_container">
+                                <div class="image_container">
+                                    <img src="https://media.istockphoto.com/photos/freedom-chains-that-transform-into-birds-charge-concept-picture-id1322104312?b=1&k=20&m=1322104312&s=170667a&w=0&h=VQyPkFkMKmo0e4ixjhiOLjiRs_ZiyKR_4SAsagQQdkk="
+                                        class="image" alt="card" title="card">
+                                </div>
+
+                                <div class="cardgeneric_body">
+                                    <div class="mb_8">
+                                        <span class="purple-lozenge-xsm">
+                                            Lozenge
+                                        </span>
+                                    </div>
+
+                                    <h1 class="cardgeneric_heading m-0">Conduct Rules, Ethics & Profesional Practice
+                                        Competency
+                                        Masterclass and onto three lines</h1>
+                                    <p class="sub_label mb-0">Sub-label</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+
+
+        </ul>
+        <div class="mt-1" id="display-shadow"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Mobile -->
+    <div class="header_mobile d-none" id="sidenav">
+        <div class="wrapper">
+            <div class="d-flex align-items-center header_button mb-4 ">
+                <div class="button_container mr_12 w-100 me-4">
+                    <button type="button" class="button_secondary small_btn w-100 ">Login </button>
+                </div>
+                <div class="button_container w-100 ">
+                    <button type="button" class="button_primary small_btn w-100 border_primary ">Register </button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="profile_section d-flex align-items-center">
+                    <div class="profile_name">
+                        HB
+                    </div>
+                    <div>
+                        <p class="username mb-0">Henrik Bustrup</p>
+                        <p class="userid mb-0">Member No. 1247651</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-icons-outlined arrow_right">
+                        keyboard_arrow_right
+                    </span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4 childnavlist">
+                <p class="mb-0 options">Profession & Standards</p>
+                <span class="material-icons-outlined arrow_right">
+                    keyboard_arrow_right
+                </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4 childnavlist">
+                <p class="mb-0 options">Training & Events</p>
+                <span class="material-icons-outlined arrow_right">
+                    keyboard_arrow_right
+                </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4 childnavlist">
+
+                <p class="mb-0 options">Dispute Resolution Service</p>
+                <span class="material-icons-outlined arrow_right">
+                    keyboard_arrow_right
+                </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4 childnavlist">
+                <p class="mb-0 options">Networking</p>
+                <span class="material-icons-outlined arrow_right">
+                    keyboard_arrow_right
+                </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 options1">Find Member</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 options1">Find Surveyor</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="header_mobile d-none " id="childnav">
+        <div class="wrapper">
+            <div class="d-flex mb-4 back ">
+                <p class="mb-0 options d-flex">
+                    <span class="material-icons-outlined arrow_right mr_12">
+                        keyboard_arrow_left
+                    </span>Back
+                </p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0 heading"></p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 options">Profession & Standards</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 options">Training & Events</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 options">Dispute Resolution Service</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 options">Networking</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Search mobile -->
+
+    <div class="search-mobile d-none" id="search-for-mobile">
+        <div class="wrapper">
+            <div class="search-mobile-container">
+
+                <div class="search_container">
+                    <label class="search-label" for="mobile search">Search within</label>
+                    <div class="mb-3">
+                        <button type="button " id="mobile-search-button"
+                            class="border-0 font-for-category d-flex  dropdown-toggle search-mobile-button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="select-category">All RICS.org</span> <span
+                                class="material-icons-outlined down-arrow">
+                                keyboard_arrow_down
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu py-0 main-category">
+                            <li><a class="dropdown-item category-option" href="#">Action</a></li>
+                            <li><a class="dropdown-item category-option" href="#">Another action</a></li>
+                            <li><a class="dropdown-item category-option" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item category-option" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <label class="search-label" for="mobile search">Search for</label>
+                    <form class="d-flex align-items-center search_form justify-content-between">
+                        <input type="text" placeholder="Search.." name="search"
+                            class="search-input-mobile w-100 border-0 mobile-searchox">
+                        <span class="material-icons-outlined search_icon">
+                            search
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+
+
+        $(document).ready(function () {
+           
+
+            $("#hamburgur").click(function () {
+                $("#sidenav").css('width', '100%').addClass('d-block').removeClass('d-none');
+                $(this).addClass('d-none').removeClass('d-block');
+                $("#cross").addClass('d-block').removeClass("d-none");
+                $("#cart").addClass('d-none').removeClass("d-block");
+
+            })
+
+            $("#cross").click(function () {
+                $("#sidenav").css('width', '0').addClass('d-none').removeClass('d-block');
+                $(this).addClass('d-none').removeClass('d-block');
+                $("#hamburgur").addClass('d-block').removeClass("d-none");
+                $("#childnav").addClass('d-none').removeClass("d-block");
+                $("#cart").addClass('d-block').removeClass("d-none");
+
+
+
+            })
+
+            $("#search-btn").click(function () {
+                $("#search-for-mobile").addClass("d-block").removeClass("d-none");
+                $("#cross-search").addClass("d-block").removeClass("d-none");
+                $("#search-btn").addClass("d-none").removeClass("d-block");
+            })
+            $("#cross-search").click(function () {
+                $("#search-for-mobile").addClass("d-none").removeClass("d-block");
+                $("#search-btn").addClass("d-block").removeClass("d-none");
+                $("#cross-search").addClass("d-none").removeClass("d-block");
+
+            })
+
+            $("#close-search").click(function () {
+                $("#showform").addClass("d-none").removeClass("d-block");
+                $("#showheader").addClass("d-block").removeClass("d-none")
+            })
+
+
+            $(".childnavlist").click(function () {
+                $("#childnav").addClass("d-block").removeClass('d-none');
+                var x = $(this).find(".options").text();
+                $(".heading").text(x);
+
+            })
+
+            $(".back").click(function () {
+                $("#childnav").addClass("d-none").removeClass('d-block');
+            })
+
+        });
+
+
+
+        $(document).ready(function () {
+
+            // -------------------------for adding and removing shadow----------------------
+
+            $(".nav_options").mouseover(function () {
+                $("#display-shadow").addClass("box-shadow-navigation")
+            });
+            $(".nav_options").mouseout(function () {
+                $("#display-shadow").removeClass("box-shadow-navigation")
+            });
+
+
+            // ------------------for category drop down-----------------------
+
+            $(".search_container button").click(function () {
+
+
+                if ($(".down-arrow").hasClass('transform-by-180')) {
+                    $(".down-arrow").removeClass("transform-by-180")
+                } else {
+                    $(".down-arrow").addClass("transform-by-180")
+                }
+            })
+
+            $(".search_container .main-category .category-option").click(function () {
+                let value = $(this).text()
+                if ($(".down-arrow").hasClass('transform-by-180')) {
+                    $(".down-arrow").removeClass("transform-by-180")
+                }
+
+
+                $(".search_container .main-category .category-option").css('color', '#36424A')
+                $(this).css('color', '#4D3069')
+                console.log(value)
+                $(".search_container button .select-category").text(value)
+
+            })
+
+            // searchbox button mobile setting width to dropdown
+
+            $("#mobile-search-button").click(function () {
+                let width_searchbox = $("#mobile-search-button").outerWidth()
+                $(".main-category").css("width", width_searchbox)
+            })
+
+          
+
+
+
+
+            // searchbox keyup for autocomplete
+
+
+            $(".searchbox").keyup(function () {
+
+                if ($(this).val().length > 0) {
+                    $('#dextop-typing-close').addClass("d-block").removeClass("d-none")
+                } else {
+                    $('#dextop-typing-close').addClass("d-none").removeClass("d-block")
+                }
+
+
+                let width_searchbox = $(".search_form").outerWidth()
+
+                $(".xdsoft_autocomplete_dropdown").css("width", width_searchbox)
+
+               
+                // $(".xdsoft_autocomplete_dropdown").prepend("<h3 class='popular-searches' >Popular Searches</h3>");
+               
+            })
+
+            // $('.searchbox').click(function(){
+            //     let width_searchbox = $(".search_form").outerWidth()
+
+            //     $(".xdsoft_autocomplete_dropdown").css("width", width_searchbox)
+            // })
+
+            //erasing typing content on click cross
+
+            $("#dextop-typing-close").click(function () {
+                $(".searchbox").val("")
+                $(this).addClass("d-none").removeClass("d-block")
+            })
+
+        });
+
+
+
+
+    </script>
+
+
+
+    <script>
+        var states = [
+            'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+            'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia',
+            'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa',
+            'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland',
+            'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',
+            'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+            'New Jersey', 'New Mexico', 'New York', 'North Carolina',
+            'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania',
+            'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee',
+            'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
+            'West Virginia', 'Wisconsin', 'Wyoming'
+        ];
+
+        $(function () {
+            $(".searchbox").autocomplete({
+                source: [states]
+            });
+        });
+
+        $(function () {
+            $(".mobile-searchox").autocomplete({
+                source: [states]
+            });
+        });
+    </script>
+    <script src="../assets/js/bootstrap.js"></script>
+
+    <script src="autocomplete.js"></script>
+
+</body>
+
+</html>
